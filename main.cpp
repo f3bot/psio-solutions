@@ -120,6 +120,18 @@ void draw_square(int how_many, bool left_diag, bool right_diag){
     }
 }
 
+int gcd(int a, int b){
+    int c = 1;
+
+    while (b != 0){
+        c = a % b;
+        a = b;
+        b = c;
+    }
+
+    return a;
+}
+
 int main()
 {
     // int size = 0;
